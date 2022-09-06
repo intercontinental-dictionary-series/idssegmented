@@ -1,0 +1,40 @@
+{
+    "title": "CLDF dataset derived from Key and Comrie's \"Intercontinental Dictionary Series\" from 2021",
+    "access_right": "open",
+    "keywords": [
+        "cldf:Wordlist",
+        "linguistics"
+    ],
+    "creators": [
+        {
+            "name": "Key, M. R"
+        },
+        {
+            "name": "Comrie, B."
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Johann-Mattis List",
+            "type": "Other"
+        },
+        {
+            "name": "Key, M. R",
+            "type": "DataCollector"
+        },
+        {
+            "name": "Comrie, B.",
+            "type": "DataCollector"
+        }
+    ],
+    "communities": [
+        {
+            "identifier": "lexibank"
+        }
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>+++</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-4.0"
+    }
+}
