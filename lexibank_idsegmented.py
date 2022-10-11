@@ -16,7 +16,7 @@ import re
 
 class Dataset(IDSDataset):
     dir = pathlib.Path(__file__).parent
-    id = "idsupdate"
+    id = "idssegmented"
     form_spec = FormSpec(
             replacements=[
                 ("1", "¹"),

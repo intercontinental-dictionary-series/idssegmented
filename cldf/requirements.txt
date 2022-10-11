@@ -17,7 +17,7 @@ idspy==0.3.0
 iniconfig==1.1.1
 isodate==0.6.1
 joblib==1.1.0
-lingpy==2.6.9
+-e git+https://github.com/lingpy/lingpy.git@c782a847d36e65227fe314565be218551a28bfa2#egg=lingpy
 lxml==4.9.1
 Markdown==3.4.1
 nameparser==1.1.1

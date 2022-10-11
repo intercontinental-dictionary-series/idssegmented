@@ -13,7 +13,7 @@
         {
             "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented",
             "rdf:type": "prov:Entity",
-            "dc:created": "1195aa9",
+            "dc:created": "e0b63a1",
             "dc:title": "Repository"
         },
         {
@@ -55,7 +55,7 @@
             "dc:relation": "requirements.txt"
         }
     ],
-    "rdf:ID": "idsupdate",
+    "rdf:ID": "idssegmented",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
     "tables": [
         {
