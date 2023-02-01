@@ -35,6 +35,7 @@ class Dataset(IDSDataset):
             separators="~;,/", missing_data=["∅"], first_form_only=True)
 
     def cmd_download(self, args):
+        
         ids_data = pycldf.Dataset.from_metadata(
                 self.raw_dir.joinpath('ids', 'cldf', 'cldf-metadata.json')
                 )
@@ -83,6 +84,10 @@ class Dataset(IDSDataset):
             args.log.info("Transcription: "+t)
 
     def cmd_makecldf(self, args):
+        # concepticon mapping for IDS just in case
+        cid2cgl = {c.id: c.gloss for c in
+                   self.concepticon.conceptsets.values()}
+
         # add bib
         args.writer.add_sources()
         args.log.info("added sources")
@@ -92,6 +97,7 @@ class Dataset(IDSDataset):
                 )
 
         for concept in ids_data.objects('ParameterTable'):
+            concept.data["Concepticon_Gloss"] = cid2cgl[concept.data["Concepticon_ID"]]
             args.writer.add_concept(
                     **concept.data)
 
@@ -132,6 +138,7 @@ class Dataset(IDSDataset):
                     Value=wl[idx, "value"],
                     Transcriptions=wl[idx, "transcriptions"],
                     AlternativeValues=alt,
+                    Source="IDS",
                     Loan=True if wl[idx, "borrowing"] else False)
             else:
                 args.log.info("excluding: "+wl[idx, "value"])

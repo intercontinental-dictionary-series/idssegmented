@@ -1,18 +1,20 @@
 <a name="ds-cldfmetadatajson"> </a>
 
-# Wordlist CLDF dataset derived from Key and Comrie's "Intercontinental Dictionary Series" from 2021
+# Wordlist CLDF dataset accompanying List's "Inference of Partial Colexifications" from 2023 building on Key and Comrie's "Intercontinental Dictionary Series" from 2021
 
 **CLDF Metadata**: [cldf-metadata.json](./cldf-metadata.json)
 
+**Sources**: [sources.bib](./sources.bib)
+
 property | value
  --- | ---
-[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | +++
+[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Key, Mary Ritchie & Comrie, Bernard (eds.) 2021. The Intercontinental Dictionary Series. Leipzig: Max Planck Institute for Evolutionary Anthropology. DOI: https://doi.org/10.5281/zenodo.5547908
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF Wordlist](http://cldf.clld.org/v1.0/terms.rdf#Wordlist)
 [dc:identifier](http://purl.org/dc/terms/identifier) | https://github.com/intercontinental-dictionary-series/idssegmented
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/intercontinental-dictionary-series/idssegmented
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/intercontinental-dictionary-series/idssegmented/tree/e0b63a1">intercontinental-dictionary-series/idssegmented e0b63a1</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.6">Glottolog v4.6</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v2.6.0">Concepticon v2.6.0</a></li><li><a href="https://github.com/cldf-clts/clts//tree/v2.2.0">CLTS v2.2.0</a></li><li><a href="https://github.com/lexibank/ids/tree/v4.2">lexibank/ids v4.2</a></li></ol>
-[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>lingpy-rcParams</strong>: <a href="./lingpy-rcParams.json">lingpy-rcParams.json</a></li><li><strong>python</strong>: 3.10.4</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/intercontinental-dictionary-series/idssegmented/tree/0913b34">intercontinental-dictionary-series/idssegmented 0913b34</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.7">Glottolog v4.7</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v3.0.0">Concepticon v3.0.0</a></li><li><a href="https://github.com/cldf-clts/clts//tree/v2.2.0">CLTS v2.2.0</a></li><li><a href="https://github.com/lexibank/ids/tree/v4.2">lexibank/ids v4.2</a></li></ol>
+[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>lingpy-rcParams</strong>: <a href="./lingpy-rcParams.json">lingpy-rcParams.json</a></li><li><strong>python</strong>: 3.9.16</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | idssegmented
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
@@ -37,7 +39,7 @@ Name/Property | Datatype | Description
 [Form](http://cldf.clld.org/v1.0/terms.rdf#form) | `string` | 
 [Segments](http://cldf.clld.org/v1.0/terms.rdf#segments) | list of `string` (separated by ` `) | 
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
-[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | 
+[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | References [sources.bib::BibTeX-key](./sources.bib)
 `Cognacy` | `string` | 
 `Loan` | `boolean` | 
 `Graphemes` | `string` | 
