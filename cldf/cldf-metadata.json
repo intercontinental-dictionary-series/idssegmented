@@ -14,7 +14,7 @@
         {
             "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented",
             "rdf:type": "prov:Entity",
-            "dc:created": "1a15f88",
+            "dc:created": "653e0a6",
             "dc:title": "Repository"
         },
         {
@@ -58,6 +58,9 @@
     ],
     "rdf:ID": "idssegmented",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
+    "dialect": {
+        "commentPrefix": null
+    },
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
@@ -188,7 +191,7 @@
                     {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#glottocode",
-                        "valueUrl": "http://glottolog.org/resource/languoid/id/{Glottocode}",
+                        "valueUrl": "http://glottolog.org/resource/languoid/id/{glottolog_id}",
                         "name": "Glottocode"
                     },
                     {
@@ -278,7 +281,7 @@
                     {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference",
-                        "valueUrl": "http://concepticon.clld.org/parameters/{Concepticon_ID}",
+                        "valueUrl": "http://concepticon.clld.org/parameters/{concepticon_id}",
                         "name": "Concepticon_ID"
                     },
                     {

@@ -36,14 +36,14 @@ In this derived version of the original Intercontinental Dictionary Series, all 
 - **Synonymy:** 1.25
 - **Invalid lexemes:** 0
 - **Tokens:** 2,626,382
-- **Segments:** 551 (0 BIPA errors, 0 CLTS sound class errors, 551 CLTS modified)
+- **Segments:** 551 (0 BIPA errors, 0 CTLS sound class errors, 551 CLTS modified)
 - **Inventory size (avg):** 51.02
 
 # Contributors
 
 Name                   | GitHub user     | Description | Role
 ---                    | ---             | ---         | ---
-Johann-Mattis List     | @Lingulist | maintainer  | Other
+Johann-Mattis List     | @Lingulist | maintainer  | Editor
 Key, M. R    |                 |             | Author, DataCollector
 Comrie, B.          |                 |             | Author, DataCollector
 
