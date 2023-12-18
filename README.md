@@ -29,15 +29,15 @@ In this derived version of the original Intercontinental Dictionary Series, all 
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 329
+- **Varieties:** 303
 - **Concepts:** 1,310
-- **Lexemes:** 454,145
+- **Lexemes:** 407,162
 - **Sources:** 1
-- **Synonymy:** 1.28
+- **Synonymy:** 1.25
 - **Invalid lexemes:** 0
-- **Tokens:** 2,902,306
-- **Segments:** 558 (0 BIPA errors, 0 CLTS sound class errors, 558 CLTS modified)
-- **Inventory size (avg):** 50.76
+- **Tokens:** 2,626,382
+- **Segments:** 551 (0 BIPA errors, 0 CLTS sound class errors, 551 CLTS modified)
+- **Inventory size (avg):** 51.02
 
 # Contributors
 

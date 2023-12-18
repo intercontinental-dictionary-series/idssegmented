@@ -108,10 +108,16 @@ class Dataset(IDSDataset):
                                              ]}
             data["ID"] = slug(data["Name"])
             args.writer.add_language(**data)
-                
+
+        # create a blacklist
+        form_blacklist = {language["ID"]: language["Blacklist"] for language in
+                          self.languages}
+
         for language in ids_data.objects("LanguageTable"):
-            add_language_(language)
+            if form_blacklist[slug(language.data["Name"])] != "1":
+                add_language_(language)
         args.log.info("added languages and concepts")
+
         
         def add_form_(wl, idx):
             if wl[idx, "transcriptions"] == "CyrillTrans;Phonemic":
@@ -126,7 +132,7 @@ class Dataset(IDSDataset):
                 form = re.split(";|,", form)[0] 
             except IndexError:
                 form = ""
-            if form:
+            if form and form_blacklist[slug(wl[idx, "doculect"])] != "1":
                 form = self.form_spec.clean(form).replace(" ", "_")
                 if wl[idx, "transcriptions"] == "CyrillTrans":
                     form = unidecode(form)
@@ -141,8 +147,9 @@ class Dataset(IDSDataset):
                     Source="IDS",
                     Loan=True if wl[idx, "borrowing"] else False)
             else:
-                args.log.info("excluding: "+wl[idx, "value"])
+                args.log.info("excluding: " + wl[idx, "doculect"] + " "+ wl[idx, "value"])
                 
         wl = Wordlist(self.raw_dir.joinpath("ids-data.tsv").as_posix())
         for idx in pb(wl, desc="adding forms"):
-            add_form_(wl, idx)
+            if form_blacklist[slug(wl[idx, "doculect"])] != "1":
+                add_form_(wl, idx)
