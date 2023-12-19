@@ -1,5 +1,7 @@
 # CLDF dataset accompanying List's "Inference of Partial Colexifications" from 2023 building on Key and Comrie's "Intercontinental Dictionary Series" from 2021
 
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
+
 ## How to cite
 
 If you use these data please cite
@@ -23,21 +25,22 @@ In this derived version of the original Intercontinental Dictionary Series, all 
 ## Statistics
 
 
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 303
+- **Varieties:** 294
 - **Concepts:** 1,310
-- **Lexemes:** 407,162
+- **Lexemes:** 392,171
 - **Sources:** 1
-- **Synonymy:** 1.25
+- **Synonymy:** 1.24
 - **Invalid lexemes:** 0
-- **Tokens:** 2,626,382
-- **Segments:** 551 (0 BIPA errors, 0 CTLS sound class errors, 551 CLTS modified)
-- **Inventory size (avg):** 51.02
+- **Tokens:** 2,534,326
+- **Segments:** 518 (0 BIPA errors, 0 CLTS sound class errors, 518 CLTS modified)
+- **Inventory size (avg):** 50.58
 
 # Contributors
 

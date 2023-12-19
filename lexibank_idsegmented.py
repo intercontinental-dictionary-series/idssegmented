@@ -39,7 +39,7 @@ class Dataset(IDSDataset):
         ids_data = pycldf.Dataset.from_metadata(
                 self.raw_dir.joinpath('ids', 'cldf', 'cldf-metadata.json')
                 )
-        ids = set([row["IDS_ID"] for row in self.languages])
+        ids = set([row["ID"] for row in self.languages])
 
         bex = re.compile(r"\[(.+?)\]")
 
