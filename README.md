@@ -1,6 +1,6 @@
 # CLDF dataset accompanying List's "Inference of Partial Colexifications" from 2023 building on Key and Comrie's "Intercontinental Dictionary Series" from 2021
 
-[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented//workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented//actions?query=workflow%3ACLDF-validation)
 
 ## How to cite
 
@@ -28,7 +28,7 @@ In a first version, we later found several errors for languages for which orthog
 ## Statistics
 
 
-[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented//workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented//actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
@@ -41,19 +41,17 @@ In a first version, we later found several errors for languages for which orthog
 - **Sources:** 270
 - **Synonymy:** 1.24
 - **Invalid lexemes:** 0
-- **Tokens:** 2,363,389
-- **Segments:** 514 (0 BIPA errors, 0 CLTS sound class errors, 514 CLTS modified)
-- **Inventory size (avg):** 51.92
+- **Tokens:** 2,363,392
+- **Segments:** 515 (0 BIPA errors, 0 CLTS sound class errors, 515 CLTS modified)
+- **Inventory size (avg):** 51.93
 
 # Contributors
 
-Name                   | GitHub user     | Description | Role
----                    | ---             | ---         | ---
-Johann-Mattis List     | @Lingulist | maintainer  | Editor
-Key, M. R    |                 |             | Author, DataCollector
-Comrie, B.          |                 |             | Author, DataCollector
-
-
+Name | GitHub user | Description | Role
+--- | --- | --- | ---
+Johann-Mattis List | @Lingulist | maintainer | Editor
+Key, M. R | | | Author, DataCollector
+Comrie, B. | | | Author, DataCollector
 
 
 

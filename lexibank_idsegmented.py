@@ -3,7 +3,6 @@ import regex as re
 import attr
 # from clldutils.misc import slug
 from pylexibank import progressbar as pb
-from pylexibank import Language
 from pylexibank import FormSpec
 import pycldf
 from idspy import IDSDataset
@@ -11,7 +10,6 @@ from lingpy import Wordlist
 from clldutils.misc import slug
 from unidecode import unidecode
 import re
-
 
 
 class Dataset(IDSDataset):
@@ -30,12 +28,11 @@ class Dataset(IDSDataset):
                 ("9", "⁹"),
                 ("0", "⁰"),
                 ("#", ""),
-                 (" ", "_"),
+                (" ", "_"),
                 ], 
             separators="~;,/", missing_data=["∅"], first_form_only=True)
 
     def cmd_download(self, args):
-        
         ids_data = pycldf.Dataset.from_metadata(
                 self.raw_dir.joinpath('ids', 'cldf', 'cldf-metadata.json')
                 )
@@ -44,24 +41,24 @@ class Dataset(IDSDataset):
             if language["Blacklist"] == "1":
                 ids.add(language["ID"])
 
-
         bex = re.compile(r"\[(.+?)\]")
 
         def test_borrowed(word, value):
-            if '[' not in value: return ""
+            if '[' not in value:
+                return ""
             # Need to be sure it is this form.
             # Test to see if loan substring of value in form.
             # Use regex to get all borrowed substrings from value.
             # Test for whether any of borrowed substrings in form.
             loans = bex.findall(value)
             for loan in loans:
-                if loan in word: return "1"
+                if loan in word:
+                    return "1"
             # Not this form.
             return ""
 
-
         # SOURCES HERE
-        with open(self.raw_dir.joinpath("sources.bib"), "w") as f:
+        with open(self.raw_dir.joinpath("sources.bib"), "w", encoding='utf8') as f:
             for language in ids_data.objects("LanguageTable"):
                 if slug(language.name) not in ids:
                     f.write("@incollection{ids-" + language.id + ",\n")
@@ -73,9 +70,9 @@ class Dataset(IDSDataset):
                     f.write("  title = {" + language.name + "},\n"),
                     f.write("  url = {https://ids.clld.org/contributions/" + language.id + "},\n")
                     f.write("  year = {2023}\n}\n\n")
-        
+
         transc = set()
-        with open(self.raw_dir.joinpath("ids-data.tsv").as_posix(), "w") as f:
+        with open(self.raw_dir.joinpath("ids-data.tsv").as_posix(), "w", encoding='utf8') as f:
             f.write("\t".join([
                 "ID", "FORM_ID", "DOCULECT", "DOCULECT_ID", "CONCEPT", "CONCEPT_ID",
                 "VALUE", "FORM", "TRANSCRIPTIONS", "ALTVALS", "BORROWING"])+"\n") 
@@ -121,10 +118,8 @@ class Dataset(IDSDataset):
                     **concept.data)
 
         def add_language_(lang):
-            data = {k: lang.data[k] for k in ["ID", "Name", "Glottocode", 
-                                             "ISO639P3code", "Latitude",
-                                             "Longitude"
-                                             ]}
+            cols = ["ID", "Name", "Glottocode", "ISO639P3code", "Latitude", "Longitude"]
+            data = {k: lang.data[k] for k in cols}
             data["ID"] = slug(data["Name"])
             args.writer.add_language(**data)
 
@@ -137,7 +132,6 @@ class Dataset(IDSDataset):
                 add_language_(language)
         args.log.info("added languages and concepts")
 
-        
         def add_form_(wl, idx):
             if wl[idx, "transcriptions"] == "CyrillTrans;Phonemic":
                 form, alt = wl[idx, "altvals"], wl[idx, "form"]

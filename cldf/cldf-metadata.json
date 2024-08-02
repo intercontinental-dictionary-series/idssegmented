@@ -9,16 +9,16 @@
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "CLDF dataset accompanying List's \"Inference of Partial Colexifications\" from 2023 building on Key and Comrie's \"Intercontinental Dictionary Series\" from 2021",
-    "dcat:accessURL": "https://github.com/intercontinental-dictionary-series/idssegmented",
+    "dcat:accessURL": "https://github.com/intercontinental-dictionary-series/idssegmented/",
     "prov:wasDerivedFrom": [
         {
-            "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented",
+            "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented/",
             "rdf:type": "prov:Entity",
-            "dc:created": "0790683",
+            "dc:created": "v1.0-3-g2321ea5",
             "dc:title": "Repository"
         },
         {
-            "rdf:about": "git@github.com:glottolog/glottolog",
+            "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
             "dc:created": "v5.0",
             "dc:title": "Glottolog"
@@ -30,7 +30,7 @@
             "dc:title": "Concepticon"
         },
         {
-            "rdf:about": "https://github.com/cldf-clts/clts/",
+            "rdf:about": "https://github.com/cldf-clts/clts",
             "rdf:type": "prov:Entity",
             "dc:created": "v2.3.0",
             "dc:title": "CLTS"
@@ -49,7 +49,7 @@
         },
         {
             "dc:title": "python",
-            "dc:description": "3.12.3"
+            "dc:description": "3.12.4"
         },
         {
             "dc:title": "python-packages",
