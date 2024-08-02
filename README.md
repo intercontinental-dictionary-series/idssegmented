@@ -1,10 +1,12 @@
 # CLDF dataset accompanying List's "Inference of Partial Colexifications" from 2023 building on Key and Comrie's "Intercontinental Dictionary Series" from 2021
 
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
+
 ## How to cite
 
 If you use these data please cite
 - the original source
-  > Key, Mary Ritchie & Comrie, Bernard (eds.) 2021. The Intercontinental Dictionary Series. Leipzig: Max Planck Institute for Evolutionary Anthropology. DOI: https://doi.org/10.5281/zenodo.5547908
+  > List, J.-M. (2023): Inference of partial colexifications from multilingual wordlists. Frontiers in Psychology 14.1156540. 1-10.
 - the derived dataset using the DOI of the [particular released version](../../releases/) you were using
 
 ## Description
@@ -26,6 +28,7 @@ In a first version, we later found several errors for languages for which orthog
 ## Statistics
 
 
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")

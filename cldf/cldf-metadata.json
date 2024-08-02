@@ -1,7 +1,7 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
-    "dc:bibliographicCitation": "Key, Mary Ritchie & Comrie, Bernard (eds.) 2021. The Intercontinental Dictionary Series. Leipzig: Max Planck Institute for Evolutionary Anthropology. DOI: https://doi.org/10.5281/zenodo.5547908",
+    "dc:bibliographicCitation": "List, J.-M. (2023): Inference of partial colexifications from multilingual wordlists. Frontiers in Psychology 14.1156540. 1-10.",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:identifier": "https://github.com/intercontinental-dictionary-series/idssegmented",
     "dc:isVersionOf": null,
@@ -14,7 +14,7 @@
         {
             "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented",
             "rdf:type": "prov:Entity",
-            "dc:created": "81b5f21",
+            "dc:created": "0790683",
             "dc:title": "Repository"
         },
         {

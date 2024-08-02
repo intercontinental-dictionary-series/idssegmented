@@ -39,11 +39,11 @@ class Dataset(IDSDataset):
         ids_data = pycldf.Dataset.from_metadata(
                 self.raw_dir.joinpath('ids', 'cldf', 'cldf-metadata.json')
                 )
-
         ids = set()
         for language in self.languages:
             if language["Blacklist"] == "1":
                 ids.add(language["ID"])
+
 
         bex = re.compile(r"\[(.+?)\]")
 
