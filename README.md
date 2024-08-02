@@ -16,6 +16,9 @@ This dataset is licensed under a CC-BY-4.0 license
 
 Available online at https://github.com/intercontinental-dictionary-series/idssegmented
 
+
+Conceptlists in Concepticon:
+- [Key-2016-1310](https://concepticon.clld.org/contributions/Key-2016-1310)
 ## Notes
 
 In this derived version of the original Intercontinental Dictionary Series, all entries have been roughly mapped to the International Phonetic Alphabet in the version provided by the Cross-Linguistic Transcriptin Systems initiative (https://clts.clld.org). The conversions should be largely consistent, but it is quite possible that there remain many erroneous conversions, where experts of the respective language varieties would select different transcription values. We emphasize that this is but a first step towards a standardizatio of the IDS data, and that additional work can and should be carried out by experts in the future.
