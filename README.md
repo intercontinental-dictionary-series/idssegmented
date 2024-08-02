@@ -16,7 +16,10 @@ Available online at https://github.com/intercontinental-dictionary-series/idsseg
 
 ## Notes
 
-In this derived version of the original Intercontinental Dictionary Series, all entries have been roughly mapped to the international phonetic alphabet in the version provided by the Cross-Linguistic Transcriptin Systems initiative (https://clts.clld.org). The conversions should be largely consistent, but it is quite possible that there remain many erroneous conversions, where experts of the respective language varieties would select different transcription values. We emphasize that this is but a first step towards a standardizatio of the IDS data, and that additional work can and should be carried out by experts in the future.
+In this derived version of the original Intercontinental Dictionary Series, all entries have been roughly mapped to the International Phonetic Alphabet in the version provided by the Cross-Linguistic Transcriptin Systems initiative (https://clts.clld.org). The conversions should be largely consistent, but it is quite possible that there remain many erroneous conversions, where experts of the respective language varieties would select different transcription values. We emphasize that this is but a first step towards a standardizatio of the IDS data, and that additional work can and should be carried out by experts in the future.
+
+In a first version, we later found several errors for languages for which orthographies were confused with phonetic or phonemic transcriptions in the original. The updated version now tries to take this into account by removing the respective languages with problems and also by slowly planning to make targeted segmentations for particular languages in the dataset. As a recent example for such a targeted segmentation, consider the segmented version of Panoan languages in the dataset [keypano](https://github.com/intercontinental-dictionary-series/keypano), which contains targeted transcriptions for two dozen languages. These languages have also been ignored in this version, since we consider that a better solution for transcriptions in segmented form has been provided. This means also, that the current dataset will hopefully shrink in the future whenever we manage to provide targeted segmentations for more languages in the sample.
+
 
 
 
@@ -29,15 +32,15 @@ In this derived version of the original Intercontinental Dictionary Series, all 
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 303
-- **Concepts:** 1,310
-- **Lexemes:** 407,162
-- **Sources:** 1
-- **Synonymy:** 1.25
+- **Varieties:** 270 (linked to 221 different Glottocodes)
+- **Concepts:** 1,310 (linked to 1,308 different Concepticon concept sets)
+- **Lexemes:** 364,633
+- **Sources:** 270
+- **Synonymy:** 1.24
 - **Invalid lexemes:** 0
-- **Tokens:** 2,626,382
-- **Segments:** 551 (0 BIPA errors, 0 CTLS sound class errors, 551 CLTS modified)
-- **Inventory size (avg):** 51.02
+- **Tokens:** 2,363,389
+- **Segments:** 514 (0 BIPA errors, 0 CLTS sound class errors, 514 CLTS modified)
+- **Inventory size (avg):** 51.92
 
 # Contributors
 

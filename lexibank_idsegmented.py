@@ -39,7 +39,11 @@ class Dataset(IDSDataset):
         ids_data = pycldf.Dataset.from_metadata(
                 self.raw_dir.joinpath('ids', 'cldf', 'cldf-metadata.json')
                 )
-        ids = set([row["IDS_ID"] for row in self.languages])
+
+        ids = set()
+        for language in self.languages:
+            if language["Blacklist"] == "1":
+                ids.add(language["ID"])
 
         bex = re.compile(r"\[(.+?)\]")
 
@@ -54,6 +58,21 @@ class Dataset(IDSDataset):
                 if loan in word: return "1"
             # Not this form.
             return ""
+
+
+        # SOURCES HERE
+        with open(self.raw_dir.joinpath("sources.bib"), "w") as f:
+            for language in ids_data.objects("LanguageTable"):
+                if slug(language.name) not in ids:
+                    f.write("@incollection{ids-" + language.id + ",\n")
+                    f.write("  address = {Leipzig},\n")
+                    f.write("  author={" + " and ".join(language.data["Authors"]) + "},\n")
+                    f.write("  booktitle = {The Intercontinental Dictionary Series},\n")
+                    f.write("  publisher = {Max Planck Institute for Evolutionary Anthropology},\n")
+                    f.write("  editor = {Mary Ritchie Key and Bernard Comrie},\n")
+                    f.write("  title = {" + language.name + "},\n"),
+                    f.write("  url = {https://ids.clld.org/contributions/" + language.id + "},\n")
+                    f.write("  year = {2023}\n}\n\n")
         
         transc = set()
         with open(self.raw_dir.joinpath("ids-data.tsv").as_posix(), "w") as f:
@@ -81,7 +100,7 @@ class Dataset(IDSDataset):
                     ])+"\n")
 
         for t in transc:
-            args.log.info("Transcription: "+t)
+            args.log.info("Transcription: " + t)
 
     def cmd_makecldf(self, args):
         # concepticon mapping for IDS just in case
@@ -144,7 +163,7 @@ class Dataset(IDSDataset):
                     Value=wl[idx, "value"],
                     Transcriptions=wl[idx, "transcriptions"],
                     AlternativeValues=alt,
-                    Source="IDS",
+                    Source="ids-" + wl[idx, "doculect_id"],
                     Loan=True if wl[idx, "borrowing"] else False)
             else:
                 args.log.info("excluding: " + wl[idx, "doculect"] + " "+ wl[idx, "value"])
