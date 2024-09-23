@@ -12,12 +12,12 @@
     "dc:related": null,
     "dc:source": "sources.bib",
     "dc:title": "CLDF dataset accompanying List's \"Inference of Partial Colexifications\" from 2023 building on Key and Comrie's \"Intercontinental Dictionary Series\" from 2021",
-    "dcat:accessURL": "https://github.com/intercontinental-dictionary-series/idssegmented/",
+    "dcat:accessURL": "https://github.com/intercontinental-dictionary-series/idssegmented",
     "prov:wasDerivedFrom": [
         {
-            "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented/",
+            "rdf:about": "https://github.com/intercontinental-dictionary-series/idssegmented",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0-4-gbe63ba2",
+            "dc:created": "v1.1",
             "dc:title": "Repository"
         },
         {
@@ -52,7 +52,7 @@
         },
         {
             "dc:title": "python",
-            "dc:description": "3.12.4"
+            "dc:description": "3.12.6"
         },
         {
             "dc:title": "python-packages",
@@ -64,7 +64,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 364633,
+            "dc:extent": 360553,
             "tableSchema": {
                 "columns": [
                     {
@@ -175,7 +175,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 270,
+            "dc:extent": 268,
             "tableSchema": {
                 "columns": [
                     {

@@ -247,7 +247,7 @@ oldhighgerman,StandardOrth,1
 oldirish,StandardOrth,1
 oldnorse,StandardOrth,1
 oldprussian,StandardOrth,1
-ossetic,CyrillTrans,0
+ossetic,CyrillTrans,1
 pacaasnovos,Phonemic,1
 pacahuara,Phonemic,1
 paez,Phonemic,0
@@ -276,7 +276,7 @@ romanian,StandardOrth,1
 romani,Phonemic,0
 rotuman,Phonemic,0
 rumai,phonetic,0
-russian,Phonemic,0
+russian,Phonemic,1
 rutulborchinokhnowdialect,CyrillTrans,0
 rutulborchinokhnowdialect,CyrillTrans;Phonemic,0
 rutul,CyrillTrans;Phonemic,0
