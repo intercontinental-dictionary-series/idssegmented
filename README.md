@@ -1,6 +1,6 @@
 # CLDF dataset accompanying List's "Inference of Partial Colexifications" from 2023 building on Key and Comrie's "Intercontinental Dictionary Series" from 2021
 
-[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented//workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented//actions?query=workflow%3ACLDF-validation)
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
 
 ## How to cite
 
@@ -31,22 +31,22 @@ In a first version, we later found several errors for languages for which orthog
 ## Statistics
 
 
-[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented//workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented//actions?query=workflow%3ACLDF-validation)
+[![CLDF validation](https://github.com/intercontinental-dictionary-series/idssegmented/workflows/CLDF-validation/badge.svg)](https://github.com/intercontinental-dictionary-series/idssegmented/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
 ![BIPA: 100%](https://img.shields.io/badge/BIPA-100%25-brightgreen.svg "BIPA: 100%")
 ![CLTS SoundClass: 100%](https://img.shields.io/badge/CLTS%20SoundClass-100%25-brightgreen.svg "CLTS SoundClass: 100%")
 
-- **Varieties:** 270 (linked to 221 different Glottocodes)
+- **Varieties:** 268 (linked to 219 different Glottocodes)
 - **Concepts:** 1,310 (linked to 1,308 different Concepticon concept sets)
-- **Lexemes:** 364,633
-- **Sources:** 270
+- **Lexemes:** 360,553
+- **Sources:** 268
 - **Synonymy:** 1.24
 - **Invalid lexemes:** 0
-- **Tokens:** 2,363,392
+- **Tokens:** 2,335,052
 - **Segments:** 515 (0 BIPA errors, 0 CLTS sound class errors, 515 CLTS modified)
-- **Inventory size (avg):** 51.93
+- **Inventory size (avg):** 52.02
 
 # Contributors
 
